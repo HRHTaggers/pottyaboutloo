@@ -1,0 +1,86 @@
+.display-panel {
+    margin: 0;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+
+    & figure {
+        display: inline-block;
+        padding: 1rem 2rem 0 2rem;
+        font-size: 6rem;
+        background-color: white;
+        border-radius: 180px;
+    }
+
+    &__description--now,
+    &__description--next,
+    &__description--then {
+        font-size: 2rem;
+    }
+
+    &__time--now,
+    &__time--next,
+    &__time--then {
+        font-size: 1.2rem;
+    }
+
+    &__icon {
+        animation: 1s ease-in-out infinite pulse;
+
+        &--now{
+            color: $accent-color--2;
+        }
+
+        &--next {
+            color: #63cad8;
+        }
+
+        &--then {
+            color: #4395d3;
+        }
+    }
+
+    &__title {
+        padding: 1rem 0 0.5rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    &__now {
+        background: linear-gradient(to bottom right, $accent-color--4-light, $accent-color--4-dark);
+    }
+
+    &__next {
+        background: linear-gradient(to bottom right, $accent-color--5-light, $accent-color--5-dark);
+    }
+
+    &__then {
+        background: linear-gradient(to bottom right, $accent-color--2-light, $accent-color--2-dark);
+    }
+
+    &__flashcard {
+        margin: 2rem 1rem;
+        padding: 4rem 0;
+        border-radius: 2px;
+
+        &--1 {
+            background: linear-gradient(to bottom right, $accent-color--2-light, $accent-color--2-dark);
+        }
+
+        &--2 {
+            background: linear-gradient(to bottom right, $accent-color--4-light, $accent-color--4-dark);
+        }
+
+        &--3 {
+            background: linear-gradient(to bottom right, $accent-color--5-light, $accent-color--5-dark);
+        }
+
+        &--4 {
+            background: linear-gradient(to bottom right, $accent-color--1-light, $accent-color--1-dark);
+        }
+
+        &--5 {
+            background: linear-gradient(to bottom right, $accent-color--3-light, $accent-color--3-dark);
+        }
+    }
+}

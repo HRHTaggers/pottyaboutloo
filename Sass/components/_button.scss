@@ -1,0 +1,91 @@
+.btn,
+.btn-night,
+.btn-clear {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.25rem 0.75rem;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    transition: 200ms all ease-in-out;
+
+    &:hover {
+        transform: translateY(1px);
+    }
+
+    &::after,
+    &::selection {
+        border: none;
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.btn {
+    background: linear-gradient(to bottom right, $accent-color--3-light, $accent-color--3);
+
+    &:hover {
+        color: white;
+        background: linear-gradient(to bottom right, $accent-color--3, $accent-color--3-dark);
+    }
+
+    &::after,
+    &::selection {
+        background: linear-gradient(to bottom right, $accent-color--2, $accent-color--2-dark);
+    }
+}
+
+.btn-clear {
+    background: linear-gradient(to bottom right, $text-color-trace, $text-color-secondary);
+
+    &:hover {
+        color: white;
+        background: linear-gradient(to bottom right, $text-color-secondary, $text-color-primary);
+    }
+
+    &::after,
+    &::selection {
+        background: linear-gradient(to bottom right, $text-color-trace, $text-color-secondary);
+    }
+}
+
+.btn-night {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1200;
+    background-color: white;
+    transition: 200ms all ease-in-out;
+
+    &__link {
+        color: rgb(42, 33, 61);
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(42, 33, 61);
+            text-decoration: none;
+        }
+    }
+
+    &:hover {
+        color: white;
+        background: linear-gradient(to bottom right, rgb(245, 242, 253), rgb(255, 255, 255));
+    }
+
+    &::after,
+    &::selection {
+        background: linear-gradient(to bottom right, $accent-color--2-light, $accent-color--2);
+    }
+}

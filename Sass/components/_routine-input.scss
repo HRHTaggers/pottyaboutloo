@@ -1,0 +1,57 @@
+.input {
+
+    padding: 2rem 2rem 1rem 2rem;
+    font-size: 1.2rem;
+
+    &__form {
+        
+        &--label {
+            margin: 0 2rem 0 0;
+        }
+
+        &--input {
+            margin: 0 2rem 0 0;
+            padding: 0.25rem;
+            color: $background-color-dark;
+            background-color: $background-color-light;
+            border: none;
+            border-radius: 2px;
+        }
+
+        &--dropdown-container {
+            margin: 0 1rem 0 0;
+            padding: 0.25rem;
+            background-color: $background-color;
+            color: $text-color-secondary;
+            border: none;
+            border-radius: 2px;
+        }
+
+        &--dropdown-category {
+            background-color: $background-color;
+        }
+
+        &--dropdown-option {
+            background-color: white;
+
+            &::selection {
+                background-color: $background-color-dark;
+            }
+        }
+
+        &--timing {
+            padding: 0.15rem;
+            border: $background-color 2px solid;
+            border-radius: 3px;
+            color: $text-color-secondary;
+
+            &:active {
+                background-color: $background-color-light;
+            }
+            
+            &::selection {
+                background-color: $background-color-light;
+            }
+        }
+    }
+}

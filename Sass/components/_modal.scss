@@ -1,0 +1,98 @@
+.modal-window {
+  
+  &__instructions,
+  &__stars,
+  &__nightscreen,
+  &__cookies {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  transition: 200ms all ease-in-out;
+  }
+
+  &__instructions {
+    background-color: $background-color-modal--1;
+    z-index: 500;
+  }
+
+  &__stars {
+    background: $background-color-modal--2;
+    z-index: 600;
+  }
+
+  &__stars-message {
+
+    &--primary {
+      font-size: 1.4rem;
+      color: $accent-color--3-dark;
+      font-weight: 800;
+    }
+
+    &--secondary {
+      font-size: 1.2rem;
+      padding-top: 1.5rem;
+    }
+  }
+
+  &__nightscreen {
+    background: radial-gradient(transparent, black), url(/src/img/nightscreen-background.png);
+    //background-color: #1e1e25;
+    //background: linear-gradient(120deg, rgb(42, 33, 61), rgb(16, 13, 24));
+    background-size: cover;
+    z-index: 800;
+  }
+
+  &__container,
+  &__container-night,
+  &__nightscreen--overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 1rem;
+    border-radius: 5px;
+  }
+
+  &__container {
+    background: linear-gradient(to bottom right, $text-color-faint 10%, white 10%, white 90%, $text-color-faint 90%); 
+    min-width: 70vw;
+  }
+
+  &__container-night {
+    min-width: 90vw;
+  }
+
+  &__nightscreen--overlay {
+    background: radial-gradient(transparent, black 60%);
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 1000;
+  }
+
+  &__step {
+      font-weight: 800;
+      font-size: 3rem;
+      color: $background-color-dark;
+  }
+
+  &__heading {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: $background-color-dark;
+  }
+
+  &__paragraph {
+      font-size: 1.2rem;
+  }
+
+}
+
+.hidden {
+  opacity: 0;
+  visibility: none;
+  z-index: -100;
+}

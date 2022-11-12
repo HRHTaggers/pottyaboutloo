@@ -1,0 +1,40 @@
+.footer {
+    padding: 2rem;
+    background: linear-gradient(to bottom right, $background-color, $background-color-dark);
+    color: white;
+
+    &__logo {
+        max-height: 17vh;
+
+        @include respond(tab-land) {
+            max-height: 14vh;
+        }
+
+        @include respond(phone) {
+            max-height: 10vh;
+        }
+    }
+
+    &__attribution {
+        margin: auto;
+        font-size: 0.75rem;
+
+        &--logo {
+            transition: 200ms all ease-in-out;
+
+            &:hover {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+    &__attribution--music {
+        font-size: 0.5rem;
+    }
+}
+
+.footer-night {
+    margin: 0;
+    height: 40vh;
+    background: linear-gradient(120deg, rgb(42, 33, 61), rgb(6, 5, 9));
+}
