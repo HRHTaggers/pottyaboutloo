@@ -604,64 +604,110 @@
   font-size: 4rem;
 }
 
-.tools__panel--1, .tools__panel--2, .tools__panel--3 {
+.carousel {
+  height: 25rem;
   padding: 3rem 2rem 2rem 2rem;
   vertical-align: middle;
 }
 
-.tools__panel--1 {
-  background: linear-gradient(120deg, #f8db84, #fbc218);
-}
-
-.tools__panel--1:hover {
-  background: linear-gradient(120deg, #fbc218, #f1b80b);
-  cursor: pointer;
-}
-
-.tools__panel--2 {
-  background: linear-gradient(120deg, #c2de5e, #b8e60f);
-}
-
-.tools__panel--2:hover {
+.carousel__slider--item {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(120deg, #b8e60f, #9cbd23);
+  padding: 3rem 2rem 2rem 2rem;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 1;
 }
 
-.tools__panel--3 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#6bdf6f), to(#64d168));
-  background: linear-gradient(to bottom right, #6bdf6f, #64d168);
-}
-
-.tools__panel--3:hover {
-  background: linear-gradient(120deg, #64d168, #12b017);
-}
-
-.tools__panel--icon {
+.carousel__slider--item-emoji {
   display: inline;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  padding: 2rem 1rem 1rem 1rem;
   border-radius: 120px;
   background-color: white;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
-.tools__panel--link {
+.carousel__slider--item-caption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.carousel__slider--item-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+
+.carousel__slider--link {
   text-decoration: none;
   color: white;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
 }
 
-.tools__panel--link:hover, .tools__panel--link::before, .tools__panel--link::after, .tools__panel--link:visited {
+.carousel__slider--link:hover, .carousel__slider--link::before, .carousel__slider--link::after, .carousel__slider--link:visited {
   color: white;
 }
 
-.tools__panel--heading {
+.carousel__slider--heading {
   padding: 1rem 0;
   font-size: 1.7rem;
   font-weight: 600;
 }
 
-.tools__panel--caption {
+.carousel__slider--caption {
   font-size: 1.1rem;
+}
+
+.slider-button {
+  font-size: 4rem;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.slider-button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.button-right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  z-index: 100;
+}
+
+.button-left {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 100;
+}
+
+.slide {
+  /* we position the slide absolutely compared to its parent #slider */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  /* change the value for a faster or slower transition between slides */
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* class to show the current slide */
+.showing {
+  opacity: 1;
+  z-index: 2;
 }
 
 .display-panel {

@@ -5,9 +5,9 @@ export const footerView = function() {
         <div class="row">
                 <div class="col-sm-8">
                     <div class="footer__app-info">
-                        <img src="/src/img/rAutine-logo-white.png" alt="rAutine logo" class="footer__logo">
+                        <img src="/pal-logo.png" alt="rAutine logo" class="footer__logo">
                         <p class="footer__app-description">
-                            an application to provide a visual routine for children who struggle with transitions in their daily routine
+                            an application to help make potty training fun and engaging for toddlers and preschoolers
                         </p>
                     </div>
                 </div>
@@ -18,19 +18,11 @@ export const footerView = function() {
                     <br />
                     <div class="footer__attribution--logo">
                         <a href="https://htcoding.netlify.app" target="blank" rel="noopener noreferrer">
-                            <img src="/src/img/helen-tagliarini-logo-back-light.png" alt="HT Coding logo" class="brand-logo">
+                            <img src="/helen-tagliarini-logo-back-light.png" alt="HT Coding logo" class="brand-logo">
                         </a>
                     </div>
                     <div class="footer__attribution--location">
                         london, united kingdom
-                    </div>
-                    <br />
-                    <div class="footer__attribution--music">
-                        music provided by
-                        child dreams by keys of moon | https://soundcloud.com/keysofmoon
-                        music promoted by https://www.chosic.com/free-music/all/
-                        creative commons cc by 4.0
-                        https://creativecommons.org/licenses/by/4.0/
                     </div>
                 </div>
             </div>
