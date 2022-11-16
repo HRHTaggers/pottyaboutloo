@@ -47,23 +47,25 @@
 .btn-night__link,
 .btn-clear__link {
   text-decoration: none;
+  color: white;
 }
 
 .btn__link:hover,
 .btn-night__link:hover,
 .btn-clear__link:hover {
   text-decoration: none;
+  color: white;
 }
 
 .btn {
-  background: -webkit-gradient(linear, left top, right bottom, from(#fdc990), to(#fca03d));
-  background: linear-gradient(to bottom right, #fdc990, #fca03d);
+  background: -webkit-gradient(linear, left top, right bottom, from(#f8db84), to(#fbc218));
+  background: linear-gradient(to bottom right, #f8db84, #fbc218);
 }
 
 .btn:hover {
   color: white;
-  background: -webkit-gradient(linear, left top, right bottom, from(#fca03d), to(#fc8303));
-  background: linear-gradient(to bottom right, #fca03d, #fc8303);
+  background: -webkit-gradient(linear, left top, right bottom, from(#fbc218), to(#f1b80b));
+  background: linear-gradient(to bottom right, #fbc218, #f1b80b);
 }
 
 .btn::after, .btn::-moz-selection {
@@ -368,8 +370,8 @@
 }
 
 .dinosaur-image__large {
-  padding: 2rem;
-  font-size: 8rem;
+  padding: 1rem;
+  height: 30vh;
 }
 
 .instructions__list {
@@ -393,8 +395,8 @@
 }
 
 .introduction__paragraph {
-  padding: 1rem 3rem;
-  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.3rem;
 }
 
 .introduction__form--label {
@@ -406,6 +408,10 @@
   padding: 0.5rem;
   border: none;
   background-color: #ececec;
+}
+
+.large-icon {
+  font-size: 3rem;
 }
 
 .modal-window__instructions, .modal-window__stars, .modal-window__nightscreen, .modal-window__cookies {
@@ -853,6 +859,10 @@ body {
 
 .u-margin-top-small {
   padding-top: 2rem;
+}
+
+.u-padding-top {
+  padding-top: 6rem;
 }
 
 .brand-logo {

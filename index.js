@@ -50,7 +50,6 @@ const highFive = function() {
   highFiveEmoji.addEventListener(`click`, () => {
     highFiveEmoji.innerHTML = `🌟`;
     highFiveAudio.play();
-    
   });
 }
 

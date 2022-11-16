@@ -26,19 +26,21 @@
 
     &__link {
         text-decoration: none;
+        color: white;
 
         &:hover {
             text-decoration: none;
+            color: white;
         }
     }
 }
 
 .btn {
-    background: linear-gradient(to bottom right, $accent-color--3-light, $accent-color--3);
+    background: linear-gradient(to bottom right, $accent-color--4-light, $accent-color--4);
 
     &:hover {
         color: white;
-        background: linear-gradient(to bottom right, $accent-color--3, $accent-color--3-dark);
+        background: linear-gradient(to bottom right, $accent-color--4, $accent-color--4-dark);
     }
 
     &::after,
