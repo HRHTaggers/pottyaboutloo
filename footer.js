@@ -5,7 +5,7 @@ export const footerView = function() {
         <div class="row">
                 <div class="col-sm-8">
                     <div class="footer__app-info">
-                        <img src="/pal-logo.png" alt="rAutine logo" class="footer__logo">
+                        <img src="/pal-logo-2.png" alt="rAutine logo" class="footer__logo">
                         <p class="footer__app-description">
                             an application to help make potty training fun and engaging for toddlers and preschoolers
                         </p>
