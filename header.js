@@ -14,15 +14,15 @@ export const headerView = function () {
               </div>
               <div class="col-md-9 p-4">
                 <div>
-                  Hi, I'm Dippy!
+                  hi, i'm dippy!
                 </div>
                 <div>
-                  I'm learning to use the 🚽, but I can't do it on my own. 
+                  i'm learning to use the 🚽, but i can't do it on my own. 
                 </div>
                 <div>
-                  Will you help me?
+                  will you help me?
                 </div>
-                <div class="timer__header">I'm having fun playing now, but I'll need to go to the loo in...</div>
+                <div class="timer__header">i'm having fun playing now, but i'll need to go to the loo in...</div>
                 <div class="timer__timer-element"></div>
               </div>
             </div>
