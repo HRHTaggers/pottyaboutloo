@@ -3,6 +3,10 @@
     &__block {
         margin: 2rem;
         border: 20px white solid;
+
+        &--background {
+            background: linear-gradient(to right, $accent-color--4, $accent-color--4-dark);
+        }
     }
 
     &__paragraph {
@@ -25,5 +29,5 @@
 }
 
 .large-icon {
-    font-size: 3rem;
+    font-size: 2rem;
 }

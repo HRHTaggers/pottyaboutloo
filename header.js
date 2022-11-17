@@ -5,12 +5,12 @@ export const headerView = function () {
   header.innerHTML = `
       <div class="row">
         <div class="col-md-3 p-2 introduction__block">    
-          <img src="/pal-logo-2.png" alt="potty-about-loo logo" class="header__logo" />
+          <img src="/src/img/pal-logo-2.png" alt="potty-about-loo logo" class="header__logo" />
         </div>
         <div class="col-md p-2 introduction__subheader subheader-1 introduction__block">
             <div class="row">
               <div class="col-md-3"> 
-                <img class="dinosaur-image__large" src="/dinosaur-large-img.png" />
+                <img class="dinosaur-image__large" src="/src/img/dinosaur-large-img.png" />
               </div>
               <div class="col-md p-4">
                 <div class="introduction__paragraph">
