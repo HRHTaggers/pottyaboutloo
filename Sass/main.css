@@ -145,11 +145,16 @@
   border: 20px white solid;
 }
 
+.instructions__block {
+  background: -webkit-gradient(linear, left top, right top, from(#fbc218), to(#f1b80b));
+  background: linear-gradient(to right, #fbc218, #f1b80b);
+  margin: 1rem;
+}
+
 .instructions__image {
-  padding: 3rem;
-  max-height: 35vh;
-  border: 20px white solid;
-  margin: 2rem 1rem;
+  padding: 1rem;
+  max-height: 40vh;
+  margin: 1rem 4rem;
 }
 
 .introduction__block {
