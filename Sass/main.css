@@ -145,6 +145,13 @@
   border: 20px white solid;
 }
 
+.instructions__image {
+  padding: 3rem;
+  max-height: 35vh;
+  border: 20px white solid;
+  margin: 2rem 1rem;
+}
+
 .introduction__block {
   margin: 2rem;
   border: 20px white solid;

@@ -14,10 +14,13 @@ export const headerView = function () {
               </div>
               <div class="col-md p-4">
                 <div class="introduction__paragraph">
-                  i'm learning to use the <span class="large-icon">🚽</span>, but i can't do it on my own. i need your help. 
+                  we're learning to use the <span class="large-icon">🚽</span>, but we can't do it on our own. we need your help. 
                 </div>
-                <div class="introduction__paragraph">i'm having fun playing now, but i'll need to go to the loo in...</div>
+                <div class="introduction__paragraph">we're having fun playing now, but we'll need to go to the loo in...</div>
                 <div class="timer__timer-element"></div>
+              </div>
+              <div class="col-md-3">
+                <img class="dinosaur-image__large" src="/src/img/dinosaur-2-large-img.png" />
               </div>
             </div>
           </div>

@@ -2,8 +2,11 @@
 
 import { headerView } from "/header.js";
 import { footerView } from "/footer.js";
+import { carouselView } from "/carousel.js";
 
 headerView();
+
+carouselView();
 
 document.addEventListener("DOMContentLoaded", () => {
   // grab all the slides

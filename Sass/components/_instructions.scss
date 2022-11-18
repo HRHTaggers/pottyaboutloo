@@ -7,4 +7,11 @@
         font-size: 1.6rem;
         border: 20px white solid;
     }
+
+    &__image {
+        padding: 3rem;
+        max-height: 35vh;
+        border: 20px white solid;
+        margin: 2rem 1rem;
+    }
 }
